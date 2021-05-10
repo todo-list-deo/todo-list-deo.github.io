@@ -210,6 +210,7 @@ async function getIp() {
     const response = await fetch(`https://api.ipdata.co/?api-key=${privateKeys.IpDataKey}`);
     
     const data = await response.json();
+    /*console.log(data);*/
     return data.ip;
     
 }
@@ -218,7 +219,7 @@ async function getIp() {
 async function authorize() {
     const userIp = await getIp();
     await addIpRecordToDb(userIp);
-
+    /*return true;*/
     if (allowedIpAddresses.includes(userIp)) {
         return true;
     } else {
