@@ -6,7 +6,7 @@ const mainTemplate = (data, startArticle, deleteArticle, finishArticle) => html`
     <div class="wrapper">
         <section>
             <div>
-                <h1 class="blue">Add Task</h1>
+                <h1 class="blue"><i class="fas fa-arrow-circle-down"></i>Add Task</h1>
             </div>
             <div>
                 <form @submit=${operations.addTask}>
@@ -19,14 +19,14 @@ const mainTemplate = (data, startArticle, deleteArticle, finishArticle) => html`
                     <input type="date" id="date" name="date" placeholder="2020.04.14"><br>
                     <button type="submit" id="add"><i class="fas fa-plus"></i></button>
                 </form>
-                <button @click=${operations.changeTheme} class="change-theme">Change Theme</button>
+                <button @click=${operations.changeTheme} class="change-theme"><i class="fas fa-exchange-alt"></i>Change Theme</button>
     
             </div>
         </section>
     
         <section>
             <div>
-                <h1 class="orange">Open</h1>
+                <h1 class="orange"><i class="fas fa-list-ul"></i>Open</h1>
             </div>
             <div id="open">
                 ${data.filter(x => x.status == 'open').map((x) => openTaskTemplate(x, startArticle, deleteArticle))}
@@ -34,7 +34,7 @@ const mainTemplate = (data, startArticle, deleteArticle, finishArticle) => html`
         </section>
         <section>
             <div>
-                <h1 class="yellow">In Progress</h1>
+                <h1 class="yellow"><i class="fas fa-pen"></i>In Progress</h1>
             </div>
             <div id="inProgress">
                 ${data.filter(x => x.status == 'inProgress').map((x) =>
@@ -43,7 +43,7 @@ const mainTemplate = (data, startArticle, deleteArticle, finishArticle) => html`
         </section>
         <section>
             <div>
-                <h1 class="green">Complete</h1>
+                <h1 class="green"><i class="fas fa-clipboard-check"></i>Complete</h1>
             </div>
             <div id="completed">
                 ${data.filter(x => x.status == 'finished').map((x) => finishedTaskTemplate(x, deleteArticle))}
@@ -51,7 +51,7 @@ const mainTemplate = (data, startArticle, deleteArticle, finishArticle) => html`
         </section>
         <section>
             <div>
-                <h1 class="red">Deleted</h1>
+                <h1 class="red"><i class="fas fa-times-circle"></i>Deleted</h1>
             </div>
             <div id="deleted">
                 ${data.filter(x => x.status == 'deleted').map(deletedTaskTemplate)}

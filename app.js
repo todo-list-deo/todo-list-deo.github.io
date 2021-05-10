@@ -165,8 +165,8 @@ function setThemeBlack() {
     document.querySelector('.footer a').style.color = 'white';
     document.querySelector('form').style.border = "2px solid white";
     document.querySelector('form').style.background = 'radial-gradient(black, transparent)';
-    document.querySelectorAll('h3, p, label').forEach(x => x.style.color = 'white');
-    document.querySelectorAll('article').forEach(x => x.style.background = 'radial-gradient(black, transparent)');
+    document.querySelectorAll('h3, p, label').forEach(x => x.style.color = 'black');
+    document.querySelectorAll('article').forEach(x => x.style.background = 'radial-gradient(white, transparent)');
     document.querySelectorAll('article').forEach(x => x.style.border = "2px solid white");
 }
 
@@ -179,8 +179,8 @@ function setThemeWhite() {
     document.querySelector('.footer a').style.color = 'black';
     document.querySelector('form').style.border = "2px solid black";
     document.querySelector('form').style.background = 'radial-gradient(white, transparent)';
-    document.querySelectorAll('h3, p, label').forEach(x => x.style.color = 'black');
-    document.querySelectorAll('article').forEach(x => x.style.background = 'radial-gradient(white, transparent)');
+    document.querySelectorAll('h3, p, label').forEach(x => x.style.color = 'white');
+    document.querySelectorAll('article').forEach(x => x.style.background = 'radial-gradient(black, transparent)');
     document.querySelectorAll('article').forEach(x => x.style.border = "2px solid black");
 }
 

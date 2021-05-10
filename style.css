@@ -81,6 +81,7 @@ article {
   border: 1px solid black;
   border-radius: 5px;
   background: radial-gradient(white, transparent);
+  color: black;
   font-size: 1.2em;
 }
 
@@ -147,29 +148,57 @@ form button {
 
 .orange {
   background-color: #ff9f1a;
-  font-family: Papyrus;
+  color: black;
+  font-family: fantasy;
+}
+
+.orange:hover {
+  background: black;
+  color: orange;
 }
 
 .yellow {
   background-color: #ffd500;
-  font-family: Papyrus;
+  color: black;
+  font-family: fantasy;
 }
+
+.yellow:hover {
+  background: black;
+  color: #ffd500;
+}
+
 .green {
   background-color: #8acc47;
-  color: white;
-  font-family: Papyrus;
+  color: black;
+  font-family: fantasy;
+}
+
+.green:hover {
+  background: black;
+  color: #8acc47;
 }
 
 .red {
-  background-color: #d93651;
-  color: white;
-  font-family: Papyrus;
+  background-color: #d96531;
+  color: black;
+  font-family: fantasy;
+}
+
+.red:hover {
+  background: black;
+  color: #d96531;
 }
 
 .blue {
   background-color: #0000ff;
   color: white;
-  font-family: Papyrus;
+  font-family: fantasy;
+}
+
+.blue:hover {
+  background: black;
+  color: #0000ff;
 }
 
 .purple {
